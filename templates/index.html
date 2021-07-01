@@ -85,9 +85,9 @@
           <br></br>
           <button type="submit" class="btn btn-primary btn-block btn-large">ตรวจสอบ</button>
           <div class="results">
-          {% if prediction == ['0']%} <!-- 0 = Fake -->
+          {% if prediction == [0]%} <!-- 0 = Fake -->
             <h2 style="color:red;">ข่าวนี้เป็นข่าวเท็จ กรุณาอย่าแชร์ต่อ</h2>
-          {% elif prediction == ['1']%} <!-- 1 = Real -->
+          {% elif prediction == [1]%} <!-- 1 = Real -->
             <h2 style="color:green;"><b>ข่าวนี้เป็นข่าวจริง สามารถแชร์ต่อได้</b></h2>
           {% endif %}  
       </div>

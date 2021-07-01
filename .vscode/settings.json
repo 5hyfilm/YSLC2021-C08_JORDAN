@@ -29,5 +29,6 @@
         "env.bak{,/**}",
         "venv.bak{,/**}",
         ".vscode{,/**}"
-    ]
+    ],
+    "git.ignoreLimitWarning": true
 }
