@@ -11,8 +11,8 @@
 4. Wait for the result.
 
 ## How to install
-1. Clone or download this [repository](https://github.com/5hyfilm/YSLC2021-C08_JORDAN).
-2. Change directory by type ```cd YSLC2021-C08_JORDAN``` in terminal.
+1. Clone or download this [repository](https://github.com/5hyfilm/yslc2021-c08-jordan).
+2. Change directory by type ```cd yslc2021-c08-jordan``` in terminal.
 3. Create virtualenv by type ```python3 -m venv venv``` in terminal.
 4. Activate virtualenv by type ```source venv/bin/activate``` in terminal.
 5. Install all requirements by type ```pip3 install -r requirements.txt``` in terminal.
