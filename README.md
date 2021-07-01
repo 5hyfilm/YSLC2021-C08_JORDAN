@@ -1,6 +1,15 @@
-# YSLC2021-C08_JORDAN
- 
+# YSLC2021 C08 JORDAN
+## Screenshort
+<img src="https://github.com/fxlmer/SkinFine/blob/main/webscreenshot.png">
+
 ## How to use
+1. Visit to our web app https://yslc2021-c08-jordan.azurewebsites.net/.
+2. Type texts from news in the box
+<img src="https://github.com/fxlmer/SkinFine/blob/main/webscreenshot.png">
+3. Click the button.
+4. Wait for the result.
+
+## How to install
 1. Clone or download this [repository](https://github.com/5hyfilm/YSLC2021-C08_JORDAN).
 2. Change directory by type ```cd YSLC2021-C08_JORDAN``` in terminal.
 3. Create virtualenv by type ```python3 -m venv venv``` in terminal.
