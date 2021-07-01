@@ -15,9 +15,9 @@ import nltk
 
 app = Flask(__name__)
 CORS(app)
-app=flask.Flask(__name__,template_folder='templates')
+app=flask.Flask(__name__, template_folder='templates')
 
-with open('ex_news-tra_thai-model.pickle', 'rb') as handle:
+with open('yslc-jordan-model.pickle', 'rb') as handle:
 	model = pickle.load(handle)
 
 @app.route('/')
@@ -41,4 +41,4 @@ def predict():
 
 if __name__=="__main__":
     port=int(os.environ.get('PORT', 5000))
-    app.run(port=port,debug=True,use_reloader=False)
+    app.run(port=port, debug=True, use_reloader=False)
