@@ -9,7 +9,7 @@
 
 3. Click the button.
 4. Wait for the result.
-
+---
 ## How to install
 1. Clone or download this [repository](https://github.com/5hyfilm/yslc2021-c08-jordan).
 2. Change directory by type ```cd yslc2021-c08-jordan``` in terminal.
@@ -18,3 +18,20 @@
 5. Install all requirements by type ```pip3 install -r requirements.txt``` in terminal.
 6. Run ```python3 app.py``` in terminal.
 7. Open localhost http://127.0.0.1:5000 in your browser.
+---
+## Requirements.txt
+Please edit before install on device.
+
+For Deploy on Linux server
+```
+torch==1.9.0+cpu
+torchvision==0.10.0+cpu
+torchaudio==0.9.0
+-f https://download.pytorch.org/whl/torch_stable.html
+```
+For use on localhost (macOS)
+```
+torch==1.9.0
+torchvision==0.1
+torchaudio==0.9.0
+```
