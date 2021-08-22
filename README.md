@@ -29,7 +29,7 @@ torchvision==0.10.0+cpu
 torchaudio==0.9.0
 -f https://download.pytorch.org/whl/torch_stable.html
 ```
-For use on localhost (macOS)
+For use on macOS and Windows
 ```
 torch==1.9.0
 torchvision==0.1
