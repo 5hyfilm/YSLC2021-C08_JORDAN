@@ -32,6 +32,6 @@ torchaudio==0.9.0
 For use on macOS and Windows
 ```
 torch==1.9.0
-torchvision==0.1
+torchvision==0.10.0
 torchaudio==0.9.0
 ```
