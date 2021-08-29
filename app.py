@@ -20,10 +20,6 @@ app=flask.Flask(__name__, template_folder='templates')
 with open('yslc-jordan-model.pickle', 'rb') as handle:
 	loaded_model = pickle.load(handle)
 
-@app.route('/')
-def main():
-    return render_template('index.html')
-
 def fake_news_det(news):
     prediction = loaded_model.predict([news])
     return prediction
@@ -32,7 +28,15 @@ def fake_news_det_proba(news):
     prediction_proba = loaded_model.predict_proba([news])
     return prediction_proba
 
-@app.route('/predict', methods=['POST'])
+@app.route('/')
+def main():
+    return render_template('predictor.html')
+
+@app.route('/predictor')
+def predictor():
+    return render_template('predictor.html')
+
+@app.route('/predictor', methods=['POST'])
 def predict():
     if request.method == 'POST':
         message = request.form['message']
@@ -42,9 +46,25 @@ def predict():
         prediction_proba = fake_news_det_proba(message)
         prediction_proba_2f = "{:.2f}".format(max(max(prediction_proba))*100)
         print(prediction_proba_2f)
-        return render_template('index.html', prediction=prediction, prediction_proba=prediction_proba_2f)
+        return render_template('predictor.html', prediction=prediction, prediction_proba=prediction_proba_2f)
     else:
-        return render_template('index.html', prediction="Something went wrong")
+        return render_template('predictor.html', prediction="Something went wrong")
+
+@app.route('/about')
+def about():
+    return render_template('about.html')
+
+@app.route('/members')
+def members():
+    return render_template('members.html')
+
+@app.route('/feedback')
+def feedback():
+    return render_template('feedback.html')
+
+@app.route('/contact')
+def contact():
+    return render_template('contact.html')
 
 if __name__=="__main__":
     port=int(os.environ.get('PORT', 5000))
