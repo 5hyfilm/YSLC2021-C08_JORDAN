@@ -5,8 +5,6 @@
 ## How to use
 1. Visit to our web app https://yslc2021-c08-jordan.azurewebsites.net/.
 2. Type texts from news in the box
-<img src="https://github.com/5hyfilm/yslc2021-c08-jordan/blob/main/images/img2.png">
-
 3. Click the button.
 4. Wait for the result.
 ---
